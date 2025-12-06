@@ -1,6 +1,7 @@
 from smart_qa.client import LLMClient
 import logging
 import argparse
+import os
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="Utils INFO: %(message)s")
@@ -46,7 +47,15 @@ def main():
      llm_output = summary
     
     if args.save:
-        pass
+        filename = os.path.join(os.getcwd(), 'history.txt')
+        try:
+            with open(filename, mode='a') as f:
+                f.write(text)
+                f.write('\n')
+                f.write(llm_output)
+
+        except Exception as e:
+            print(f"Error writing to file: {e}")
 
     return 
 
