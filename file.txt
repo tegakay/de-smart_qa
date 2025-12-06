@@ -1,0 +1,5 @@
+Since the invention of computers, humans have always needed and found ways to interact and share information with these machines. The information exchange has flowed among humans, computer software, and hardware components. The shared boundary between any two of these elements is generically known as an interface.
+
+In software development, an interface is a special part of a given piece of software that allows interaction between components of a computer system. When it comes to human and software interaction, this vital component is known as the user interface.
+
+You’ll find different types of user interfaces in programming. Probably, graphical user interfaces (GUIs) are the most common today. However, you’ll also find apps and programs that provide command-line interfaces (CLIs) for their users. In this tutorial, you’ll learn about CLIs and how to create them in Python.

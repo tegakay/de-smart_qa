@@ -1,0 +1,30 @@
+[project]
+name = "smart-qa"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "tegakay",email = "kofitega@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "google-genai (>=1.53.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "smart_qa", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.1,<10.0.0)",
+    "pytest-mock (>=3.15.1,<4.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)"
+]
+
+[tool.poetry.scripts]
+smart_qa = "main:main"
