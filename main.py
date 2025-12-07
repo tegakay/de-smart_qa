@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format="Utils INFO: %(message)s")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Simple LLM Client")
+    parser = argparse.ArgumentParser(description="Simple LLM Client",prog="smart_qa")
 
     parser.add_argument(
         "--file",
